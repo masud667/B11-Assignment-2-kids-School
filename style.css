@@ -163,7 +163,7 @@
 .curriculum{
   background-image: url('assets/bg.png');
   background-size: contain;
-  background-repeat: repeat-x;
+  background-repeat: repeat-y;
   padding: 60px 0;
 }
 
@@ -227,6 +227,8 @@ text-align: center;
 @media screen and (max-width:576px) {
   .logo-text, .navbar, #header-btn{
     display: none;
+    margin: 0;
+    padding: 0;
   }
   .header{
     padding-top: 8px;
@@ -266,18 +268,31 @@ text-align: center;
     font-size: 1rem;
     margin: 10px auto;
   }
-
+  .curriculum-cards{
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+  }
+  .curriculum-title{
+    font-size: 1.9rem;
+  }
 
 }
 
 /* responsive for tablet */
 @media screen and (min-width:575.9px) and (max-width:992px) {
+  .header{
+    max-width: 100%;
+  }
   .header-container{
-    max-width: 90%;
-    gap: 50px;
-    margin: 0;
+    justify-content: space-between;
+    gap: 60px;
+    width:80%;
+    margin: 0 auto;
   }
   .logo-text{
+    margin: 0;
+    padding: 0;
     display: none;
   }
   .nav-link{
@@ -300,5 +315,13 @@ text-align: center;
   .banner-img img{
     width:120%;
   }
+  .curriculum-cards{
+    flex-direction: column;
+    align-items: center;
+  }
+  .curriculum-title{
+    font-size: 2.5rem;
+  }
+
 
 }
