@@ -29,3 +29,81 @@
     --orange-gradient: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
     --violet-gradient: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
   }
+
+  /* button */
+  .primary-btn{
+    color:var(--white);
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    border-radius: 12px;
+    padding: 8px 50px;
+    border: none;
+    }
+    .secondary-btn{
+      border-radius: 47.93px;
+      color: var(--white);
+      font-family: Raleway;
+      font-size: 1rem;
+      font-weight: 500;
+      line-height: 28.76px;
+      text-align: left;
+      text-transform: capitalize;
+      border: none;
+    }
+
+    /* common style */
+    .display-flex{
+      display: flex;
+    }
+
+    /* main css start here */
+
+    /* header part */
+.header{
+  max-width: 1440px;
+  height: 102px;
+}
+.header-container{
+  max-width: 1150px;
+  gap: 186px;
+  align-items: center;
+  margin: 0 auto;
+}
+.logo{
+  align-items: center;
+  gap: 15px;
+}
+.logo-text{
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 30px;
+}
+.nav-links{
+  list-style: none;
+  gap: 32px;
+  justify-content: flex-start;
+}
+.nav-link{
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+.home{
+  color: var(--orange);
+}
+.about{
+  color: var(--dark-Turquoise);
+}
+.Facilities{
+  color: var(--sky-blue-);
+}
+.Admission{
+  color: var(--violet);
+}
+.header-btn{
+  background-color: var(--orange);
+}
