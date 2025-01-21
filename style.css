@@ -66,8 +66,9 @@
   height: 102px;
 }
 .header-container{
-  max-width: 1150px;
+  max-width: 80%;
   gap: 186px;
+  justify-content: space-between;
   align-items: center;
   margin: 0 auto;
 }
@@ -106,4 +107,48 @@
 }
 .header-btn{
   background-color: var(--orange);
+}
+.menu-icon{
+  display: none;
+}
+
+/* responsive layout */
+
+/* for mobile responsive  */
+@media screen and (max-width:576px) {
+  .logo-text, .navbar, #header-btn{
+    display: none;
+  }
+  .header-container{
+    max-width: 90%;
+  }
+  .menu-icon{
+    display: block;
+  }
+  .menu-icon i{
+    font-size: 2rem;
+  }
+
+}
+
+/* responsive for tablet */
+@media screen and (min-width:575.9px) and (max-width:992px) {
+  .header-container{
+    max-width: 90%;
+    gap: 50px;
+    margin: 0;
+  }
+  .logo-text{
+    display: none;
+  }
+  .nav-link{
+    font-size: 1rem;
+  }
+  .nav-links{
+    gap: 20px;
+  }
+  .header-btn{
+    font-size: .8rem;
+    padding: 10px 40px;
+  }
 }
