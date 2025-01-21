@@ -221,6 +221,89 @@ text-align: center;
 .ReadMore3{color: var(--violet);}
 
 
+/* stories prt start here */
+
+.stories{
+  background-image: url('assets/bg.png');
+  background-size: contain;
+  background-repeat: repeat-y;
+  padding: 60px 0;
+  background: var(--orange-gradient);
+}
+.stories-title{
+  color: var(--black);
+  font-size: 2.9rem;
+  font-weight: 700;
+  line-height: 57.5px;
+  margin: 80px 0px;
+  text-align: center;
+}
+.stories-container{
+  display: flex;
+  gap: 10px;
+  max-width: 48%;
+  height: 630px;
+}
+.stories-container img{
+  border-radius: 16px 16px 0 0;
+}
+.small-boxs{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+.small-box{
+   border-radius: 16px;
+  background-color: var(--white);
+  position: relative;
+}
+
+.large-box{
+  position: relative;
+  border-radius: 16px;
+  background-color: var(--white);
+}
+.storie-box-title{
+  color: var(--black);
+  font-size:1rem;
+  font-weight: 700;
+  line-height: 28.76px;
+  text-align: left;
+  padding: 15px 25px;
+}
+.large-txt{
+  font-size: 1.5rem;
+}
+.stories-box-des{
+  color: rgb(102, 102, 102);
+  font-family: Raleway;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 28.76px;
+  text-align: left;
+  padding: 15px 25px;
+}
+.large-box button{
+  background-color: var(--dark-Turquoise);
+  padding: 5px 18px;
+  position: absolute;
+  top: 50%;
+  left: 5%;
+}
+.small-box button{
+  background-color: var(--pea-Green);
+  padding: 2px 18px;
+  position: absolute;
+  top: 53%;
+  left: 5%;
+}
+
+
+
+
+
+
+
 /* responsive layout */
 
 /* for mobile responsive  */
