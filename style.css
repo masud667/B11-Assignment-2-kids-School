@@ -312,7 +312,6 @@ box-sizing: border-box;
 }
 .large-txt{
   font-size: 1.5rem;
- 
 }
 .stories-box-des{
   color: rgb(102, 102, 102);
@@ -407,11 +406,6 @@ box-sizing: border-box;
 
 
 
-
-
-
-
-
 /* responsive layout */
 
 /* for mobile responsive  */
@@ -471,13 +465,21 @@ box-sizing: border-box;
     font-size: 1.9rem;
   }
  .small-boxs{
-  flex-direction: column;
   max-width: 100%;
   margin: 0 auto;
  }
  .small-box{
-  max-width: 245px;
-  height: 300px;
+  max-width: 160px;
+  height: 200px;
+  overflow: hidden;
+ }
+ .small-box button{
+  font-size: .6rem;
+  padding: 0px 16px;
+ }
+ .storie-box-title{
+  font-size: .7rem;
+  line-height: 15px;
  }
 .footer{
   flex-direction: column;
