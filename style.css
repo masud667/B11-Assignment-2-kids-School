@@ -44,6 +44,10 @@
     border-radius: 12px;
     padding: 8px 50px;
     border: none;
+    transition: all .2s ease;
+    }
+    .primary-btn:hover{
+      background-color: var(--violet);
     }
     .secondary-btn{
       border-radius: 47.93px;
@@ -343,7 +347,15 @@ box-sizing: border-box;
   background-color: var(--violet) !important;
 }
 
-
+.View-btn{
+  background-color: var(--black);
+  font-size: 1rem;
+}
+.view-all{
+  display: none;
+  text-align: center;
+  padding-bottom: 50px ;
+}
 /* footer part start here */
 
 .footer{
@@ -464,6 +476,10 @@ box-sizing: border-box;
   .curriculum-title{
     font-size: 1.9rem;
   }
+  .view-all{
+    display: block;
+  }
+
   .stories-container{
     max-width: 95%;
     gap: 0;
