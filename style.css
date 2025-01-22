@@ -18,6 +18,7 @@
 *{
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
   /* Global styles */
   :root{
@@ -64,6 +65,7 @@
     /* main css start here */
     body{
       max-width: 1440px;
+      outline: 1px solid red;
     }
     /* header part */
 .header{
@@ -123,7 +125,7 @@
 .main{
   max-width: 80%;
   margin: 0 auto;
-  position: relative;
+  /* position: relative; */
 }
 .banner{
   align-items: center;
@@ -179,14 +181,14 @@
   padding: 80px 0;
 }
 .curriculum-card{
-  box-sizing: border-box;
+  
   padding:40px;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   width: 370px;
   height: 440px;
-  box-sizing: border-box;
+  
   border: 0.94px solid var(--white);
   border-radius: 18.86px;
   box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
@@ -228,12 +230,12 @@ text-align: center;
   background: url("assets/bg.png"),linear-gradient(0.00deg, rgba(254, 163, 1, 0.09),rgba(255, 255, 255, 0.3) 100%);
   background-size: contain;
   background-repeat: repeat-y;
-  padding: 100px 200px;
-  min-width: 100vw;
-  position: relative;
-  left: 50%;
-  transform: translate(-50%);
-  box-sizing: border-box;
+  background-position: center;
+  min-width:100%;
+  /* position: relative;
+  left: 60%;
+  transform: translate(-50%); */
+  
   /* margin-left: calc((1440px - 1150px)/ -2); */
 
 }
@@ -246,38 +248,49 @@ text-align: center;
   text-align: center;
 }
 .stories-container{
-  box-sizing: border-box;
   display: flex;
   gap: 10px;
-  max-width: 48%;
-  height: 630px;
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 80%;
+  justify-content: space-between;
 }
 .stories-container img{
   border-radius: 16px 16px 0 0;
+  width: 100%;
 }
 .small-boxs{
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
+  gap: 20px; */
+max-width: 48%;
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 20px;
+box-sizing: border-box;
+  
 }
 .small-box{
+  max-width: 48%;
    border-radius: 16px;
   background-color: var(--white);
   position: relative;
 }
 
 .large-box{
+  max-width: 45%;
   position: relative;
   border-radius: 16px;
   background-color: var(--white);
 }
 .storie-box-title{
   color: var(--black);
-  font-size:1rem;
+  font-size:.9rem;
   font-weight: 700;
   line-height: 28.76px;
   text-align: left;
-  padding: 40px 25px 15px 25px;
+  padding: 30px 25px 15px 25px;
 }
 .large-txt{
   font-size: 1.5rem;
@@ -296,7 +309,7 @@ text-align: center;
   background-color: var(--dark-Turquoise);
   padding: 5px 18px;
   position: absolute;
-  top: 50%;
+  top: 52%;
   left: 5%;
 }
 
@@ -304,12 +317,76 @@ text-align: center;
   background-color: var(--pea-Green);
   padding: 2px 18px;
   position: absolute;
-  top: 53%;
+  top: 52%;
   left: 5%;
 }
 .skyblue-btn{
   background-color: var(--violet) !important;
 }
+
+
+/* footer part start here */
+
+.footer{
+ 
+  max-width:100%;
+  height: 520px;
+  background-color: var(--dark-Turquoise);
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--white);
+}
+.footer-left{
+  max-width: 30%;
+}
+.footer-right{
+  max-width: 65%;
+  gap: 60px;
+
+}
+.footer-nav{
+  flex-direction: column;
+}
+.footer-nav ul{
+  flex-direction: column;
+}
+.footer-nav ul li a{
+  color: var(--white);
+  font-weight: 400;
+}
+.footer-name{
+  color: var(--white);
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 39.51px;
+  text-align: left;
+  padding: 0 15px;
+}
+.footer-description{
+  padding-top: 35px;
+  color: var(--white);
+  font-size: 1.1rem;
+  line-height: 25px;
+  text-align: left;
+}
+.footer-nav{
+  flex-direction: column;
+}
+.footer-title{
+  padding: 40px 0;
+  color: var(--white);
+  font-size:1.2rem;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+}
+.footer-icon{
+  background-color: var(--orange);
+  padding: 10px;
+  font-size: 1.1rem;
+}
+
+
 
 
 
@@ -372,11 +449,16 @@ text-align: center;
     font-size: 1.9rem;
   }
  .small-boxs{
-  grid-template-columns: repeat(1, 1fr);
+  flex-direction: column;
+  max-width: 100%;
  }
- .stories{
-  padding: 55px  ;
+ .small-box{
+  max-width: 100%;
  }
+ .small-box button{
+  top: 57%;
+ }
+
 
 }
 
@@ -423,10 +505,8 @@ text-align: center;
   .curriculum-title{
     font-size: 2.5rem;
   }
-  .stories{
-    height: auto;
-    padding: 100px;
-  }
-  
+.small-boxs{
+  max-width: 100%;
+}
 
 }
