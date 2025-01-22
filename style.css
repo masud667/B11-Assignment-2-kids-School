@@ -297,7 +297,7 @@ box-sizing: border-box;
   height: auto;
 }
 .large-box{
-  max-width: 46%;
+  max-width: 44%;
   position: relative;
   border-radius: 16px;
   background-color: var(--white);
@@ -464,14 +464,21 @@ box-sizing: border-box;
   .curriculum-title{
     font-size: 1.9rem;
   }
+  .stories-container{
+    max-width: 95%;
+    gap: 0;
+
+  }
  .small-boxs{
   max-width: 100%;
   margin: 0 auto;
+  padding: 0;
  }
  .small-box{
   max-width: 160px;
   height: 200px;
   overflow: hidden;
+  padding: 0;
  }
  .small-box button{
   font-size: .6rem;
@@ -480,6 +487,7 @@ box-sizing: border-box;
  .storie-box-title{
   font-size: .7rem;
   line-height: 15px;
+  
  }
 .footer{
   flex-direction: column;
