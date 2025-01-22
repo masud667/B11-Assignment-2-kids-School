@@ -124,6 +124,9 @@
   font-size: 1.5rem;
   font-weight: 700;
 }
+.marquee span{
+  color: var(--orange);
+}
 /* banner part start here */
 
 .main{
@@ -413,7 +416,7 @@ box-sizing: border-box;
 
 /* for mobile responsive  */
 @media screen and (max-width:576px) {
-  .logo-text, .navbar, #header-btn, .arrow, .br{
+  .logo-text, .navbar, #header-btn, .large-box, .arrow, .br{
     display: none;
     margin: 0;
     padding: 0;
@@ -461,6 +464,9 @@ box-sizing: border-box;
     align-items: center;
     padding: 20px 0;
   }
+  .curriculum-card{
+    width:320px;
+  }
   .curriculum-title{
     font-size: 1.9rem;
   }
@@ -492,7 +498,7 @@ box-sizing: border-box;
     padding: 15px 0;
   }
 
-}
+
 .footer-right, .footer-logo{
   flex-direction: column;
   justify-content: center;
@@ -514,7 +520,7 @@ box-sizing: border-box;
 /* responsive for tablet */
 @media screen and (min-width:575.9px) and (max-width:992px) {
   .header{
-    max-width: 100%;
+    max-width:1440px;
   }
   .header-container{
     justify-content: space-between;
@@ -558,6 +564,24 @@ box-sizing: border-box;
   .curriculum-title{
     font-size: 2.5rem;
   }
-
+.small-boxs{
+  max-width: 98%;
+}
+  .footer-right, .footer-logo{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0px;
+  }
+  .footer-title{
+    padding: 20px 0;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .footer-nav ul{
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+  }
 
 }
