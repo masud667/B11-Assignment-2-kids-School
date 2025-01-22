@@ -119,6 +119,11 @@
   display: none;
 }
 
+.marquee{
+  color: var(--violet);
+  font-size: 1.5rem;
+  font-weight: 700;
+}
 /* banner part start here */
 
 .main{
@@ -221,7 +226,17 @@ text-align: center;
 .ReadMore2{color:var(--orange) ;}
 .ReadMore3{color: var(--violet);}
 
-
+.arrow{
+  text-align: center;
+}
+.arrow i{
+  color:var(--white);
+  font-size:1rem;
+  padding: 12px 14px;
+  background-color: var(--orange);
+  border-radius: 50%;
+  margin: 0 2px;
+}
 /* stories prt start here */
 
 .stories{
@@ -398,7 +413,7 @@ box-sizing: border-box;
 
 /* for mobile responsive  */
 @media screen and (max-width:576px) {
-  .logo-text, .navbar, #header-btn, .large-box, .br{
+  .logo-text, .navbar, #header-btn, .arrow, .br{
     display: none;
     margin: 0;
     padding: 0;
@@ -515,6 +530,7 @@ box-sizing: border-box;
   .large-box{
     display: none;
   }
+
   .nav-link{
     font-size: 1rem;
   }
